@@ -1,23 +1,22 @@
 #include <stdlib.h>
 #include <time.h>
-/* headers */
+/* more headers goes there */
 #include <stdio.h>
 
-
-/*
- * main - entry 
+/**
+ * main - Entry point
  *
- * Description: prints positive or negative depending on the number
+ * Description: Prints whether a random number is positive or negative
  *
- * Return: Always 0 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
-	n = rand() -RAND_MAX / 2;
-
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
 	if (!n)
 		printf("%d is zero\n", n);
 	else
