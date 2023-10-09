@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main- this program prints all possible combinations of three digits
- * Description: a function that prints combination of three digits
+ * main- this program prints all possible combinations of three digits.
  *
- * Retrun: 0
+ *
+ * Return: 0
  */
 int main(void)
 {
