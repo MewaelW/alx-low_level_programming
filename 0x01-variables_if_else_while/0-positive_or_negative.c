@@ -5,7 +5,7 @@
 /**
  * main - This program prints whether a random number is positive or negative
  *
- * Return: Always 0 
+ * Return: Always 0
  */
 int main(void)
 {
