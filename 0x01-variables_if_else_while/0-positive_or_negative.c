@@ -1,12 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: This main function prints whether a random number is positive or negative
+ * main - This program prints whether a random number is positive or negative
  *
  * Return: Always 0 
  */
