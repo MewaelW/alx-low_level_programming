@@ -1,22 +1,11 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- * main - this program prints _putchar followed by a space
+ * main - prints '_putchar' to the output
  *
  * Return: 0
  */
 int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar(' ');
-	putchar('\n');
-
-
+	write(1, "_putchar\n", 9);
 	return (0);
 }
