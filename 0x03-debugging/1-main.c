@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
  * main - causes an infinite loop
  *
- * Return: 0
+ * Return: Always 0 (Success)
+ * Author: MewaelW
  */
-
 int main(void)
 {
 	int i;
@@ -16,12 +15,10 @@ int main(void)
 /*
 *	while (i < 10)
 *	{
-*	       	since i is not increamented this will infinitly print 0
-*	       	putchar(i); 
+*		Infinite loop - No increase of variable
+*		putchar(i);
 *	}
 */
-
 	printf("Infinite loop avoided! \\o/\n");
-
 	return (0);
 }
