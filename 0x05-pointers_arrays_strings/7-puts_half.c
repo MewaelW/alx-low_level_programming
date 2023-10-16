@@ -26,7 +26,7 @@ void puts_half(char *str)
 	{
 		for (n = (a - 1) / 2; n < a; n++)
 		{
-			_putchar(str[n - 1]);
+			_putchar(str[n + 1]);
 		}
 	}
 	_putchar('\n');
