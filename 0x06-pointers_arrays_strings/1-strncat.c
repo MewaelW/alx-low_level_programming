@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * *_strncat - concatenates two strings but src uses at most n number og bytes
+ *  _strncat - concatenate two strings
  *
  * @dest: first string
  * @src: second string
  * @n: number of bytes
- * return: dest after concatenation
+ * Return: dest after concatenation
  */
 char *_strncat(char *dest, char *src, int n)
 {
