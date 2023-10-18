@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+
+int main() 
+{ 
+ 
+    int N = 10; 
+  
+    randomGenerator(N); 
+  
+    return 0; 
+}
