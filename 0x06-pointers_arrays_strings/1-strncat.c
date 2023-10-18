@@ -7,7 +7,7 @@
  * @n: number of bytes
  * return: dest after concatenation
  */
- char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int len = 0;
@@ -19,5 +19,5 @@
 	}
 	for (i = 0; src[i] && i < n; i++)
 		dest[len++] = src[i];
-	return dest;
+	return (dest);
 }
