@@ -7,11 +7,17 @@
  */
 int _atoi(char *s)
 {
-	char w[5];
-	int size;
+	int sign = 1;
+	unsigned int result = 0;
 
-	w = "Kuzon";
-	size = _strlen(w);
-	return (size);
+	do {
+		if (*s == '-')
+			sign = sign * -1;
+		else if (*s >= '0' && *s <= '9')
+			result = (result * 10) + (*s - '0');
+		else if (result > 0)
+			break;
+	} while (*s++);
+
+	return (result * sign);
 }
-
