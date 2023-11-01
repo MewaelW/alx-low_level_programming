@@ -9,10 +9,10 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0;
-	int j = 0;
-	int z = 0;
-	int y = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
+	unsigned int z = 0;
+	unsigned int y = 0;
 	char *ptr;
 
 	while (s1[i] != '\0')
