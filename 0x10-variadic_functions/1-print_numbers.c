@@ -3,7 +3,7 @@
 #include <stdarg.h>
 /**
  * print_numbers -This function prints numbers & new line at the end
-
+ *
  * @separator: string
  * @n: number of elements
  * Return: void
