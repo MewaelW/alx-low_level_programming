@@ -3,7 +3,7 @@
 
 /**
  * free_listint - this function frees a list
- * 
+ *
  * @head: Address of the first node
  **/
 
