@@ -1,25 +1,36 @@
 #include "main.h"
 
 /**
- * binary_to_uint - This function converts a binary number to an unsigned int
+ * read_textfile - program reads a text file and prints the letters
+ * @filename: filename.
+ * @letters: numbers of letters printed.
  *
- * @b: A pointer to a string.
- * Return: If b is NULL or contains chars not 0 or 1 - 0
+ * Return: numbers of letters printed. It fails, returns 0.
  */
-unsigned int binary_to_uint(const char *b)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	unsigned int a = 0;
-	int len = 0;
+	int fd;
+	ssize_t nrd, nwr;
+	char *buf;
 
-	if (b[len] == '\0')
+	if (!filename)
 		return (0);
 
-	while ((b[len] == '0') || (b[len] == '1'))
-	{
-		a <<= 1;
-		a += b[len] - '0';
-		len++;
-	}
+	fd = open(filename, O_RDONLY);
 
-	return (a);
+	if (fd == -1)
+		return (0);
+
+	buf = malloc(sizeof(char) * (letters));
+	if (!buf)
+		return (0);
+
+	nrd = read(fd, buf, letters);
+	nwr = write(STDOUT_FILENO, buf, nrd);
+
+	close(fd);
+
+	free(buf);
+
+	return (nwr);
 }
